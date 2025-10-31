@@ -153,7 +153,7 @@ export class ProductDetailsComponent implements OnInit {
       const total = (this.product.gallery_images?.length || 0) + 1;
       this.currentImageIndex = (this.currentImageIndex + 1) % total;
       this.updateCurrentImage();
-    }, 2000);
+    }, 3000);
   }
   
 
