@@ -31,7 +31,7 @@ import { TestimonialsService, Testimonial } from '../../services/testimonials.se
                 <div class="card-top d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center">
                     <div class="avatar-wrap">
-                      <img *ngIf="testimonials[currentIndex].profile_image" [src]="testimonials[currentIndex].profile_image" [alt]="testimonials[currentIndex].name" class="avatar-image" />
+                      <img *ngIf="testimonials[currentIndex].profile_image" [src]="testimonials[currentIndex].profile_image" [alt]="testimonials[currentIndex].name" class="avatar-image" loading="lazy" decoding="async" />
                       <div *ngIf="!testimonials[currentIndex].profile_image" class="avatar-placeholder"><i class="fas fa-user"></i></div>
                     </div>
                     <div class="user-meta ms-3">
@@ -41,7 +41,7 @@ import { TestimonialsService, Testimonial } from '../../services/testimonials.se
                   </div>
 
                   <div class="header-social">
-                    <img *ngIf="testimonials[currentIndex].social_icon" [src]="testimonials[currentIndex].social_icon" alt="social" class="header-social-icon" />
+                    <img *ngIf="testimonials[currentIndex].social_icon" [src]="testimonials[currentIndex].social_icon" alt="social" class="header-social-icon" loading="lazy" decoding="async" />
                   </div>
                 </div>
 
